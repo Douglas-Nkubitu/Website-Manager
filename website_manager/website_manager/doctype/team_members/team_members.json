@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-09 13:31:51.914228",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "enabled",
+  "section_break_iuna",
+  "full_name",
+  "email",
+  "phone_number",
+  "column_break_tysn",
+  "position",
+  "country",
+  "photo",
+  "section_break_xsct",
+  "bio"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email Address",
+   "options": "Email"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "section_break_iuna",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_tysn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Position"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
+  },
+  {
+   "fieldname": "section_break_xsct",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bio",
+   "fieldtype": "Small Text",
+   "label": "Bio"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-09 13:51:04.053732",
+ "modified_by": "Administrator",
+ "module": "Website Manager",
+ "name": "Team Members",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name"
+}
