@@ -7,7 +7,7 @@ frappe.ui.form.on('Contact Form', {
 		frappe.call({
 			method: 'website_manager.website_manager.doctype.contact_form.contact_form.get_contact_form_data',
 			args: {
-                doc: frm.doc
+                doc_name: frm.doc.name,
 			},
 			callback: function(response) {
 				if (response && response.message) {
