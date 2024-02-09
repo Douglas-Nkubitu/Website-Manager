@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "creation": "2024-02-09 11:53:17.211007",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "social_link_type",
+  "color",
+  "background_color"
+ ],
+ "fields": [
+  {
+   "fieldname": "social_link_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Social Link Type",
+   "options": "\nfacebook\nlinkedin\ntwitter\nemail"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "in_list_view": 1,
+   "label": "Color"
+  },
+  {
+   "fieldname": "background_color",
+   "fieldtype": "Color",
+   "in_list_view": 1,
+   "label": "Background Color"
+  }
+ ],
+ "links": [],
+ "modified": "2024-02-09 12:12:00.606020",
+ "modified_by": "Administrator",
+ "module": "Website Manager",
+ "name": "Social Profile Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Website Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
