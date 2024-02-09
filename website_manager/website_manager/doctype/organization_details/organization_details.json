@@ -1,20 +1,21 @@
 {
  "actions": [],
- "creation": "2024-02-09 11:34:12.065386",
+ "creation": "2024-02-09 16:18:32.244290",
  "default_view": "List",
  "description": "Settings for the About Us Page",
  "doctype": "DocType",
  "document_type": "Other",
  "engine": "InnoDB",
  "field_order": [
+  "company",
+  "vision",
+  "mission",
+  "column_break_oyuw",
+  "logo",
+  "section_break_apue",
   "company_introduction",
   "sb0",
-  "company_history_heading",
-  "company_history",
-  "sb1",
-  "team_members_heading",
-  "team_members_subtitle",
-  "team_members"
+  "company_history"
  ],
  "fields": [
   {
@@ -30,46 +31,45 @@
    "label": "Org History"
   },
   {
-   "description": "\"Company History\"",
-   "fieldname": "company_history_heading",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Org History Heading"
-  },
-  {
    "fieldname": "company_history",
    "fieldtype": "Table",
    "label": "Org History",
    "options": "Company History"
   },
   {
-   "fieldname": "sb1",
-   "fieldtype": "Section Break",
-   "label": "Team Members"
-  },
-  {
-   "description": "\"Team Members\" or \"Management\"",
-   "fieldname": "team_members_heading",
+   "fieldname": "company",
    "fieldtype": "Data",
-   "label": "Team Members Heading"
+   "in_list_view": 1,
+   "label": "Company"
   },
   {
-   "fieldname": "team_members_subtitle",
-   "fieldtype": "Small Text",
-   "label": "Team Members Subtitle"
+   "fieldname": "vision",
+   "fieldtype": "Data",
+   "label": "Vision"
   },
   {
-   "fieldname": "team_members",
-   "fieldtype": "Table",
-   "label": "Team Members",
-   "options": "About Us Team Member"
+   "fieldname": "mission",
+   "fieldtype": "Data",
+   "label": "Mission"
+  },
+  {
+   "fieldname": "column_break_oyuw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach Image",
+   "label": "Logo"
+  },
+  {
+   "fieldname": "section_break_apue",
+   "fieldtype": "Section Break"
   }
  ],
  "icon": "fa fa-group",
  "index_web_pages_for_search": 1,
- "issingle": 1,
  "links": [],
- "modified": "2024-02-09 12:45:46.278023",
+ "modified": "2024-02-09 16:25:44.046688",
  "modified_by": "Administrator",
  "module": "Website Manager",
  "name": "Organization Details",
@@ -77,10 +77,11 @@
  "permissions": [
   {
    "create": 1,
+   "delete": 1,
    "email": 1,
    "print": 1,
    "read": 1,
-   "role": "Website Manager",
+   "role": "System Manager",
    "share": 1,
    "write": 1
   }
@@ -88,5 +89,6 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "company",
  "track_changes": 1
 }
