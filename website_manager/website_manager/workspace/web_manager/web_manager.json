@@ -1,0 +1,166 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"XmUzpHwBTj\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Your Shortcuts</span><br>\",\"col\":12}},{\"id\":\"dLhHWz_eaV\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"About Us\",\"col\":3}},{\"id\":\"P6oyVtvkiH\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Testmonials\",\"col\":3}},{\"id\":\"f462g-RJHe\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Event Settings\",\"col\":3}},{\"id\":\"H0aqgTS6Yn\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Contact Us\",\"col\":3}},{\"id\":\"yzaaXYj-YM\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Social Profile Settings\",\"col\":3}},{\"id\":\"seyytE9YuB\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Reports &amp; Masters</b><b></b></span>\",\"col\":12}},{\"id\":\"a8rL_c62rl\",\"type\":\"card\",\"data\":{\"card_name\":\"Setup\",\"col\":4}},{\"id\":\"ONKYP6GhFf\",\"type\":\"card\",\"data\":{\"card_name\":\"Blog\",\"col\":4}},{\"id\":\"7SUx7QQLw3\",\"type\":\"card\",\"data\":{\"card_name\":\"Knowledge Base\",\"col\":4}}]",
+ "creation": "2024-02-09 11:57:17.147468",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "website",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Web Manager",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Knowledge Base",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Help Category",
+   "link_count": 0,
+   "link_to": "Support Category",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Help Article ",
+   "link_count": 0,
+   "link_to": "Knowledge Base Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Blog",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Blog Category",
+   "link_count": 0,
+   "link_to": "Blog Classification",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Blog Post",
+   "link_count": 0,
+   "link_to": "Blog Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Setup",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Event Type",
+   "link_count": 0,
+   "link_to": "Event Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Event Settings",
+   "link_count": 0,
+   "link_to": "Event Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "About Us Setting",
+   "link_count": 0,
+   "link_to": "Organization Details",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-02-09 15:31:56.704927",
+ "modified_by": "Administrator",
+ "module": "Website Manager",
+ "name": "Web Manager",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Event Settings",
+   "link_to": "Event Settings",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "About Us",
+   "link_to": "Organization Details",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Social Profile Settings",
+   "link_to": "Social Profile Settings",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Testmonials",
+   "link_to": "Testmonials",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Contact Us",
+   "link_to": "Contact Details Settings",
+   "type": "DocType"
+  }
+ ],
+ "title": "Web Manager"
+}
