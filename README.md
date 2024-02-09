@@ -4,4 +4,4 @@ Introducing Website Manager: the ultimate tool for effortlessly storing and mana
 
 #### License
 
-mit
+GNU General Public License (v3)
