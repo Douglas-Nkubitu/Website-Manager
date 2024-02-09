@@ -1,41 +1,45 @@
 {
  "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:social_account",
  "creation": "2024-02-09 11:53:17.211007",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "social_link_type",
-  "color",
-  "background_color"
+  "social_account",
+  "social_account_link",
+  "column_break_hpce"
  ],
  "fields": [
   {
-   "fieldname": "social_link_type",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Social Link Type",
-   "options": "\nfacebook\nlinkedin\ntwitter\nemail"
+   "fieldname": "social_account",
+   "fieldtype": "Data",
+   "label": "Social Account",
+   "reqd": 1,
+   "unique": 1
   },
   {
-   "fieldname": "color",
-   "fieldtype": "Color",
-   "in_list_view": 1,
-   "label": "Color"
+   "fieldname": "column_break_hpce",
+   "fieldtype": "Column Break"
   },
   {
-   "fieldname": "background_color",
-   "fieldtype": "Color",
+   "bold": 1,
+   "fieldname": "social_account_link",
+   "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Background Color"
+   "label": "Social Account Link",
+   "options": "URL",
+   "reqd": 1
   }
  ],
  "links": [],
- "modified": "2024-02-09 12:12:00.606020",
+ "modified": "2024-02-09 12:33:44.822060",
  "modified_by": "Administrator",
  "module": "Website Manager",
  "name": "Social Profile Settings",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -53,5 +57,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }
