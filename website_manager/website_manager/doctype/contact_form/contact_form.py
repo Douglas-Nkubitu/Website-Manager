@@ -10,15 +10,9 @@ class ContactForm(Document):
 	pass
 
 @frappe.whitelist()                
-def get_contact_form_data(doc):
-    contact_form_doc = frappe.get_doc("Contact Form", doc)
-    return {
-        'full_name': contact_form_doc.full_name,
-        'email_address': contact_form_doc.email_address,
-        'phone_number': contact_form_doc.phone_number,
-        'company': contact_form_doc.company,
-        'message': contact_form_doc.message
-    }
+def get_contact_form_data(doc_name):
+    contact_form_doc = frappe.get_doc("Contact Form", doc_name)
+    return contact_form_doc
 
 @frappe.whitelist()
 def get_email_template(template_name, doc, full_name=None, email_address=None, phone_number=None, company=None, message=None):
@@ -42,16 +36,16 @@ def get_email_template(template_name, doc, full_name=None, email_address=None, p
 
 @frappe.whitelist()
 def send_email(subject, content):
-    default_email_account = frappe.get_doc("Email Account", {"default_outgoing": 1})
+    cds_doc = frappe.get_doc("Contact Details Settings", {"is_single": 1} )
 
     # Check if a default email account is configured
-    if not default_email_account:
-        error_message = "Error: No default email account configured."
-        frappe.log_error(error_message, "Default Email Account Error")
+    if not cds_doc:
+        error_message = "Error: Email Not Set in Contact Details Settings."
+        frappe.log_error(error_message, "Email Error")
         return error_message
 
     frappe.sendmail(
-        recipients=default_email_account.email_id,
+        recipients=cds_doc.inquiry_email,
         subject=subject,
         content=content
     )
