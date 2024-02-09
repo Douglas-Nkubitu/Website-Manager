@@ -1,0 +1,20 @@
+[project]
+name = "website_manager"
+authors = [
+    { name = "Douglas Nkubitu", email = "nkubitudouglas@gmail.com"}
+]
+description = "Introducing Website Manager: the ultimate tool for effortlessly storing and managing all elements of your website. From user profiles to key pages such as home, about us, and contact, this intuitive platform streamlines data storage and retrieval. With its user-friendly functionality, Website Manager ensures efficient management of all website components, allowing you to focus on what matters most - delivering an exceptional online experience."
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    # "frappe~=15.0.0" # Installed and managed by bench.
+]
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+# These dependencies are only installed when developer mode is enabled
+[tool.bench.dev-dependencies]
+# package_name = "~=1.1.0"
