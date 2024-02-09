@@ -1,8 +1,7 @@
 {
  "actions": [],
- "allow_guest_to_view": 1,
  "allow_import": 1,
- "creation": "2024-02-09 11:43:31.044835",
+ "creation": "2024-02-09 14:02:35.019683",
  "default_view": "List",
  "doctype": "DocType",
  "document_type": "Setup",
@@ -210,13 +209,9 @@
    "read_only": 1
   }
  ],
- "has_web_view": 1,
  "icon": "fa fa-quote-left",
- "index_web_pages_for_search": 1,
- "is_published_field": "published",
  "links": [],
- "make_attachments_public": 1,
- "modified": "2024-02-09 11:43:31.044835",
+ "modified": "2024-02-09 14:02:35.019683",
  "modified_by": "Administrator",
  "module": "Website Manager",
  "name": "Blog Entry",
@@ -226,15 +221,15 @@
    "create": 1,
    "delete": 1,
    "email": 1,
+   "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Website Manager",
+   "role": "System Manager",
    "share": 1,
    "write": 1
   }
  ],
- "route": "blog",
  "sort_field": "modified",
  "sort_order": "ASC",
  "states": [],
