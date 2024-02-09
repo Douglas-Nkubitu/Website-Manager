@@ -1,11 +1,12 @@
 {
  "actions": [],
- "creation": "2024-02-09 12:40:06.440318",
+ "creation": "2024-02-09 22:18:10.938683",
  "default_view": "List",
  "description": "Settings for Contacts",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "contact_details_tab",
   "address",
   "address_title",
   "address_line1",
@@ -17,13 +18,19 @@
   "country",
   "email_id",
   "phone",
-  "tel"
+  "tel",
+  "inquiry_email_tab",
+  "inquiry_email"
  ],
  "fields": [
   {
+   "fieldname": "contact_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Contact Details"
+  },
+  {
    "fieldname": "address",
-   "fieldtype": "Section Break",
-   "label": "Address"
+   "fieldtype": "Section Break"
   },
   {
    "bold": 1,
@@ -53,20 +60,19 @@
    "label": "State"
   },
   {
-   "fieldname": "country",
-   "fieldtype": "Link",
-   "label": "Country",
-   "options": "Country"
-  },
-  {
    "fieldname": "column_break_14",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "phone",
-   "fieldtype": "Phone",
-   "in_list_view": 1,
-   "label": "Phone"
+   "fieldname": "postal_code",
+   "fieldtype": "Data",
+   "label": "Postal Code"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
   },
   {
    "fieldname": "email_id",
@@ -76,19 +82,33 @@
    "options": "Email"
   },
   {
-   "fieldname": "postal_code",
-   "fieldtype": "Data",
-   "label": "Postal Code"
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Phone"
   },
   {
    "fieldname": "tel",
    "fieldtype": "Phone",
    "label": "Tel"
+  },
+  {
+   "fieldname": "inquiry_email_tab",
+   "fieldtype": "Tab Break",
+   "label": "Inquiry Email"
+  },
+  {
+   "description": "Send enquiries to this email address",
+   "fieldname": "inquiry_email",
+   "fieldtype": "Data",
+   "label": "Forward To Email Address",
+   "options": "Email"
   }
  ],
  "icon": "fa fa-cog",
+ "issingle": 1,
  "links": [],
- "modified": "2024-02-09 13:27:51.721615",
+ "modified": "2024-02-09 22:18:10.938683",
  "modified_by": "Administrator",
  "module": "Website Manager",
  "name": "Contact Details Settings",
@@ -98,10 +118,8 @@
    "create": 1,
    "delete": 1,
    "email": 1,
-   "export": 1,
    "print": 1,
    "read": 1,
-   "report": 1,
    "role": "System Manager",
    "share": 1,
    "write": 1
