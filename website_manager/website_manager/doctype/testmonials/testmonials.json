@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:T-{YYYY}-{####}",
+ "creation": "2024-02-09 12:46:28.421293",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "testimonial_author",
+  "company",
+  "photo",
+  "column_break_srxo",
+  "enabled",
+  "posting_date",
+  "youtube_link",
+  "rating",
+  "section_break_ejwh",
+  "testimonial_quote",
+  "testimonial_content"
+ ],
+ "fields": [
+  {
+   "fieldname": "testimonial_quote",
+   "fieldtype": "Data",
+   "label": "Testimonial Quote"
+  },
+  {
+   "fieldname": "testimonial_author",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Testimonial Author",
+   "reqd": 1
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Organization"
+  },
+  {
+   "fieldname": "testimonial_content",
+   "fieldtype": "Text Editor",
+   "label": "Testimonial Content"
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Rating",
+   "in_list_view": 1,
+   "label": "Rating"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_srxo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ejwh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "youtube_link",
+   "fieldtype": "Data",
+   "label": "YouTube Link",
+   "options": "URL"
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": " Enabled"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-09 13:09:44.043034",
+ "modified_by": "Administrator",
+ "module": "Website Manager",
+ "name": "Testmonials",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "testimonial_author"
+}
